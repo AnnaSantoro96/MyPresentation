@@ -1,0 +1,83 @@
+body{
+    background-color: gainsboro; 
+}
+
+header{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3); /* nero con trasparenza */
+    padding-left: auto;
+    padding-right: auto;
+    margin: 30px, 50px, 30px, 20px;    
+}
+
+h1{
+    color: darkred;
+    font-size: 40px;
+}
+
+header > p{
+    margin-top:10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.interestsTitle{
+    color: darkred;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.sections{
+    background-color: rgba(0, 0, 0, 0.3); 
+    padding: 20px 20px 20px 20px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border-radius: 25px;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    color: darkred;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+a:hover{
+    color:white;
+}
+
+hr{
+    margin-top: 40px;
+    border: solid 2px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    text-align:left;
+}
