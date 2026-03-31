@@ -27,6 +27,12 @@ h2{
 
 img{
     max-width: 25%;
+    height: auto;
+}
+
+.istqb{
+    width: 18%;
+    height: auto;
 }
 
 .school-content{
@@ -47,5 +53,61 @@ img{
 hr{
     margin-top: 40px;
     border: solid 1px;
+}
+
+h3{
+    color: darkred;
+    margin-left: 30px;
+}
+
+.esat{
+    margin-top: 10px;
+}
+
+.esatTitle{
+    margin-top: 50px;
+}
+
+a{
+    color:black;
+}
+
+a:hover{
+    color: darkred;
+}
+
+.footersections a{
+    color: black;
+}
+
+.footersections h3{
+    color: darkred;
+}
+
+.footersections a:hover{
+    color: darkred;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.footersections{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footersections h3,
+.footersections p{
+    margin-left: 30px;
+}
+
+.footersections p{
+    margin-top: 10px;
+    text-align: left;
 }
 
