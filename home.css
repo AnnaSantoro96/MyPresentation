@@ -110,3 +110,105 @@ li{
 }
 
 
+/* NAVBAR */
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: darkred;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Lista */
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li{
+    position: relative;
+}
+
+/* Link */
+.nav-list a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Hover */
+.nav-list a:hover{
+    background-color: #a00000;
+    border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+}
+
+.dropdown-menu li a{
+    color: black;
+    text-align: center;
+}
+
+.dropdown-menu li a:hover{
+    background-color: #ddd;
+}
+
+/* Mostra dropdown al hover (desktop) */
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: darkred;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-list.active{
+        display: flex;
+    }
+
+    .dropdown-menu{
+        position: static;
+    }
+
+    .dropdown:hover .dropdown-menu{
+        display: none;
+    }
+
+    .dropdown.active .dropdown-menu{
+        display: block;
+    }
+}

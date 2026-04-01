@@ -8,6 +8,35 @@
 </head>
 <body>
     <header>
+
+       <!-- MENU -->
+    <nav class="navbar">
+
+        <div class="logo">MySite</div>
+
+        <ul class="nav-list">
+            <li><a href="home.html">Home</a></li>
+
+            <li class="dropdown">
+                <a href="#">Career ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="job.html">Job Career</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Interests ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="coding.html">Coding</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+        <!--END MENU-->
     
         <h1>Education</h1>
         <p>In this section you can find my entire educational path.</p>
@@ -104,4 +133,19 @@
 
     </main>
 </body>
+
+<script>
+    function myFunction(){
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(e){
+        if(!e.target.matches('.btnDropdown')){
+            var myDropdown = document.getElementById("myDropdown");
+            if(myDropdown.classList.contains('show')){
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+</script>
 </html>    
