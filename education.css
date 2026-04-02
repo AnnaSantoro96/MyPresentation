@@ -77,15 +77,15 @@ a:hover{
 }
 
 .footersections a{
-    color: black;
+    color: white;
 }
 
 .footersections h3{
-    color: darkred;
+    color: white;
 }
 
 .footersections a:hover{
-    color: darkred;
+    color: black;
 }
 
 footer{
@@ -93,6 +93,9 @@ footer{
     justify-content: space-around;
     align-items: flex-start;
     margin-top: 20px;
+    background-color: darkred;
+    color: white;
+    font-size: 20px;
 }
 
 .footersections{
