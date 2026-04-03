@@ -139,6 +139,7 @@ hr{
 
 .intershipImg{
     width:20%;
+    border-radius: 40px;
     
 }
 
@@ -164,6 +165,7 @@ h2{
 
 .careerImg{
    width: 20%;
+   border-radius: 40px;
 }
 
 .footersections a{
